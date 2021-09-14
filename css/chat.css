@@ -12,5 +12,8 @@ body{
 	border: none;
 	outline: none;
 	text-decoration: none;
-	background-color: #111111;
+	background-color: var(--body-color);
+	background: var(--body-bg-image);
+	background-size: cover;
+	font-family: var(--font-family);
 }

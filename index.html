@@ -3,10 +3,393 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title></title>
+	<title>Chat project</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+
+	<style type="text/css" media="screen">
+		:root{
+			--body-color: #111111;
+			--body-bg-image: url(../images/body-bg.jpg);
+			--font-family: 'Roboto', sans-serif;
+		}	
+	</style>
+
 	<link rel="stylesheet" href="css/chat.css">
 </head>
 <body>
-	
+
+	<div class="content-wrapper">
+
+		<!---header--->
+		<div class="header-wrap">
+            <div class="header-brand">Real Estate</div>
+            <div class="header-wrap-actions">
+                <ul class="header-icon-lists">
+                	<li><a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i></a></li>
+                	<li><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a></li>
+                	<li><a href="#"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <!---header---end--->
+
+
+        <!---conversation--->
+        <div class="conversation-container">
+        	<div class="conversation-wrap">
+
+        		<!---chatArea--->
+        		<div class="chatArea">
+        			<ul class="messages">
+        				<li class="message bot">
+        					<div class="messageBody">
+        						<div class="text">
+        							<span class="text-span">Welcome to Renewal Properties</span>
+        							 <a href="images/images.png" class="venobox" title="Image Titel">
+        								<img src="images/images.png" alt="image">
+        							</a>
+        						</div>
+        						<div class="pull-right chat-timestamp">
+        							<span class="date-time">1:44 AM</span>
+        						</div>
+        					</div>
+        				</li>
+        				<li class="message user">
+        					<div class="messageBody">
+        						<div class="text">
+        							<span class="text-span">Our projects</span>
+        						</div>
+        						<div class="pull-right chat-timestamp">
+        							<span class="date-time">1:46 AM</span>
+        						</div>
+        					</div>
+        				</li>
+        				<li class="message user">
+        					<div class="messageBody">
+        						<div class="text">
+        							<span class="text-span">So me Some projects</span>
+        						</div>
+        						<div class="pull-right chat-timestamp">
+        							<span class="date-time">1:47 AM</span>
+        						</div>
+        					</div>
+        				</li>
+
+        				<li class="message bot">
+        					<div class="messageBody">
+        						<div class="text">
+        							<span class="text-span">Which projects you are looking for ?</span>
+        						</div>
+        						<div class="pull-right chat-timestamp">
+        							<span class="date-time">1:44 AM</span>
+        						</div>
+        					</div>
+        				</li>
+
+        				<li class="message user">
+        					<div class="messageBody">
+        						<div class="text">
+        							<span class="text-span">So me Real estate projects</span>
+        						</div>
+        						<div class="pull-right chat-timestamp">
+        							<span class="date-time">1:47 AM</span>
+        						</div>
+        					</div>
+        				</li>
+
+        				<li class="message bot">
+        					<div class="messageBody">
+        						<div class="text">
+        							<a href="images/realested-1.jpg" class="venobox" title="Image Titel">
+        								<img src="images/realested-1.jpg" alt="image">
+        							</a>
+        						</div>
+        						<div class="pull-right chat-timestamp">
+        							<span class="date-time">1:44 AM</span>
+        						</div>
+        					</div>
+        				</li>
+
+        				<li class="message user">
+        					<div class="messageBody">
+        						<div class="text">
+        							<span class="text-span">So me Some More projects</span>
+        						</div>
+        						<div class="pull-right chat-timestamp">
+        							<span class="date-time">1:47 AM</span>
+        						</div>
+        					</div>
+        				</li>
+
+        				<li class="message bot">
+        					<div class="messageBody">
+        						
+        						<div class="slider-block">
+						            <h2 class="slider-title">Godrej Central - Chembur,Mumbai</h2>
+						            <div class="slider-box">
+						                <div class="owl-carousel owl-theme">
+
+							                <div class="item">
+							                	<div class="project-box">
+							                		<div class="banner-image">
+							                			<a href="images/realested-1.jpg" class="venobox" title="Image Titel">
+					        								<img src="images/realested-1.jpg" alt="image">
+					        							</a>
+							                		</div>
+							                		<div class="item-title-wrap">
+							                			<h3 class="item-title">Godrej BKC - Mumbai</h3>
+							                			<p class="item-sub-title">From the architects of Burj Khalifa, this is one of the most coveted office address in Mumbai.</p>
+							                		</div>
+							                		<div class="item-options-wrap">
+							                			<ul class="options-list">
+							                				<li><a href="#">Overview</a></li>
+							                				<li><a href="#">Gallery</a></li>
+							                				<li><a href="#">Main menu</a></li>
+							                			</ul>
+							                		</div>
+							                	</div>
+							                </div>
+
+							                <div class="item">
+							                	<div class="project-box">
+							                		<div class="banner-image">
+							                			<a href="images/realested-1.jpg" class="venobox" title="Image Titel">
+					        								<img src="images/realested-1.jpg" alt="image">
+					        							</a>
+							                		</div>
+							                		<div class="item-title-wrap">
+							                			<h3 class="item-title">Godrej BKC - Mumbai</h3>
+							                			<p class="item-sub-title">From the architects of Burj Khalifa, this is one of the most coveted office address in Mumbai.</p>
+							                		</div>
+							                		<div class="item-options-wrap">
+							                			<ul class="options-list">
+							                				<li><a href="#">Overview</a></li>
+							                				<li><a href="#">Gallery</a></li>
+							                				<li><a href="#">Main menu</a></li>
+							                			</ul>
+							                		</div>
+							                	</div>
+							                </div>
+
+							                <div class="item">
+							                	<div class="project-box">
+							                		<div class="banner-image">
+							                			<a href="images/realested-1.jpg" class="venobox" title="Image Titel">
+					        								<img src="images/realested-1.jpg" alt="image">
+					        							</a>
+							                		</div>
+							                		<div class="item-title-wrap">
+							                			<h3 class="item-title">Godrej BKC - Mumbai</h3>
+							                			<p class="item-sub-title">From the architects of Burj Khalifa, this is one of the most coveted office address in Mumbai.</p>
+							                		</div>
+							                		<div class="item-options-wrap">
+							                			<ul class="options-list">
+							                				<li><a href="#">Overview</a></li>
+							                				<li><a href="#">Gallery</a></li>
+							                				<li><a href="#">Main menu</a></li>
+							                			</ul>
+							                		</div>
+							                	</div>
+							                </div>
+
+							                <div class="item">
+							                	<div class="project-box">
+							                		<div class="banner-image">
+							                			<a href="images/realested-1.jpg" class="venobox" title="Image Titel">
+					        								<img src="images/realested-1.jpg" alt="image">
+					        							</a>
+							                		</div>
+							                		<div class="item-title-wrap">
+							                			<h3 class="item-title">Godrej BKC - Mumbai</h3>
+							                			<p class="item-sub-title">From the architects of Burj Khalifa, this is one of the most coveted office address in Mumbai.</p>
+							                		</div>
+							                		<div class="item-options-wrap">
+							                			<ul class="options-list">
+							                				<li><a href="#">Overview</a></li>
+							                				<li><a href="#">Gallery</a></li>
+							                				<li><a href="#">Main menu</a></li>
+							                			</ul>
+							                		</div>
+							                	</div>
+							                </div>
+
+						                </div>
+						            </div>
+						         </div>
+
+
+
+        						<div class="pull-right chat-timestamp">
+        							<span class="date-time">1:44 AM</span>
+        						</div>
+        					</div>
+        				</li>
+
+        				<li class="message user">
+        					<div class="messageBody">
+        						<div class="text">
+        							<span class="text-span">Overview</span>
+        						</div>
+        						<div class="pull-right chat-timestamp">
+        							<span class="date-time">2:20 AM</span>
+        						</div>
+        					</div>
+        				</li>
+
+        				<li class="message bot">
+        					<div class="messageBody">
+        						<div class="text">
+        							<h4><b><u>OVERVIEW</u></b></h4>
+        							<p>
+        								Built across more than 4 acres of land and situated in the Industrial and Business Park – I, Godrej Eternia is Chandigarh’s first modern commercial complex with ready to move office space/ retail space. Central to the tri-city of Chandigarh, Mohali and Panchkula, this property is close to many upcoming international hotels, malls and showrooms. <br><br>
+
+										Godrej Eternia has been designed by world renowned architects HBRA (Hammond Beeby Rupert Ainge, USA) and Patel Batliwala & Associates. The office spaces here come with flexible floor plans which offer seamless scope for expansion, with an option of exclusive penthouses on the terrace floor.
+										The entire building has contemporary French windows to provide soothing views of the lush greenery all around. This commercial complex is ideal for high-end offices, restaurants, health centers and salons.
+										Sale Price start from –Rs. 55 Lakhs onwards.
+
+        							</p>
+        						</div>
+        						<div class="pull-right chat-timestamp">
+        							<span class="date-time">1:44 AM</span>
+        						</div>
+        					</div>
+        				</li>
+
+        				<li class="message bot">
+        					<div class="messageBody">
+        						<div class="text">
+        							<h4><b><u>LIVE THE LANDMARK</u></b></h4>
+        							<div class="icon-lists">
+        								<ul>
+        									<li>
+        										<img src="images/retail-spaces.png" alt="Retail High Street">
+        										<span>Retail High Street</span>
+        									</li>
+        									<li>
+        										<img src="images/clubhouse.png" alt="Terrace Office">
+        										<span>Terrace Office</span>
+        									</li>
+        									<li>
+        										<img src="images/24hr_security1.png" alt="Fire Alarm">
+        										<span>Fire Alarm</span>
+        									</li>
+        									<li>
+        										<img src="images/certificate.png" alt="Platinum LEED Pre-Certified">
+        										<span>Platinum LEED Pre-Certified</span>
+        									</li>
+        									<li>
+        										<img src="images/courtgame.png" alt="Badminton court for staff">
+        										<span>Badminton court for staff</span>
+        									</li>
+        								</ul>
+        							</div>
+
+        						</div>
+        						<div class="pull-right chat-timestamp">
+        							<span class="date-time">1:44 AM</span>
+        						</div>
+        					</div>
+        				</li>
+
+        				<li class="message bot">
+        					<div class="messageBody">
+        						<div class="text">
+        							Which projects you are looking for ?
+        						</div>
+        						<div class="pull-right chat-timestamp">
+        							<span class="date-time">1:44 AM</span>
+        						</div>
+        					</div>
+        				</li>
+
+        				<li class="message user">
+        					<div class="messageBody">
+        						<div class="text">
+        							Please show some video
+        						</div>
+        						<div class="pull-right chat-timestamp">
+        							<span class="date-time">1:44 AM</span>
+        						</div>
+        					</div>
+        				</li>
+
+        				<li class="message bot">
+        					<div class="messageBody">
+        						<div class="video-box">
+        							<iframe width="560" height="315" src="https://www.youtube.com/embed/vG5E5rgHpN4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        						</div>
+        					</div>
+        				</li>
+  			
+        			</ul>
+        		</div>
+        		<!---chatArea---end--->
+
+
+        		<!---quick-reply--->
+        		<div class="quick-reply">
+					<div class="quick-reply-item">
+						<a href="#">
+							<span>Show More Gallery</span>
+						</a>
+					</div>
+					<div class="quick-reply-item">
+						<a href="#">
+							<span> Back </span>
+						</a>
+					</div>
+				</div>
+				<!---quick-reply---end--->
+
+        	</div>
+        </div>
+        <!---conversation---end--->
+
+
+        <!---create-newmessage--->
+        <div class="footer create-newmessage">
+        	<div class="footer-box">
+        		<div class="addon-button">
+        			<a href="" class="btn attachment-button">
+        				<span><i class="fa fa-paperclip" aria-hidden="true"></i></span>
+        			</a>
+        			<a href="" class="btn smile-button">
+        				<span><i class="fa fa-smile-o" aria-hidden="true"></i></span>
+        			</a>
+        		</div>
+        		<div class="post-message">
+        			<div class="post-message-text">
+        				<input class="inputMessage" placeholder="Type your message…" type="custom" value="" data-arg="" disabled="">
+        			</div>
+        			<button class="sendButton">
+                    	<i class="fa fa-paper-plane" aria-hidden="true"></i>
+                	</button>
+        		</div>
+        	</div>
+        	<div class="powered-by">
+        		<a href="#" target="_blank">Powered by<img src="images/logo.png" alt=""></a>
+        	</div>
+        </div>
+        <!---create-newmessage---end--->
+
+	</div>
+
+
+<link rel="stylesheet" href="css/font-awesome.min.css">
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<script src="js/owl.carousel.min.js"></script>
+
+<link href="assets/venobox/venobox.css" rel="stylesheet">
+<script src="assets/venobox/venobox.min.js"></script>
+
+<script src="js/script.js"></script>
+
 </body>
 </html>
