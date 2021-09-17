@@ -688,7 +688,7 @@ img{
     min-width: 100%;
 }
 
-.conversation-wrap .message-body.video{
+.conversation-wrap .message-body.video-block{
 	width: 100%;
 	padding: 4px;
 	border-radius: 4px !important;
