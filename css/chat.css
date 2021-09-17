@@ -275,6 +275,22 @@ img{
     overflow-y: auto;
     height: calc(100vh - 120px);
 }
+.chat-content-wrapper .conversation-container::-webkit-scrollbar {
+  width: 4px;
+}
+
+.chat-content-wrapper .conversation-container::-webkit-scrollbar-track {
+  background: var(--light-bg-colour);
+}
+
+.chat-content-wrapper .conversation-container::-webkit-scrollbar-thumb {
+  background: var(--text-color1);
+}
+
+.chat-content-wrapper .conversation-container::-webkit-scrollbar-thumb:hover {
+  background: var(--highlight-colour);
+}
+
 .conversation-wrap {
 	width: 100%;
     flex: 1 1;

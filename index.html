@@ -61,7 +61,7 @@
 
 
         <!---conversation--->
-        <div class="conversation-container">
+        <div class="conversation-container" id="massage-scoll-block">
         	<div class="conversation-wrap">
 
         		<!---chatArea--->
@@ -403,7 +403,7 @@
 
 <link rel="stylesheet" href="css/font-awesome.min.css">
 
-<script src="js/jquery.min.js"></script>
+<script src="js/jquery-3.1.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 
 <link rel="stylesheet" href="css/owl.carousel.min.css">
@@ -413,6 +413,17 @@
 <script src="assets/venobox/venobox.min.js"></script>
 
 <script src="js/script.js"></script>
+
+<script type="text/javascript">
+    var height = 0;
+    $('#massage-scoll-block .messages').each(function(i, value){
+        height += parseInt($(this).height());
+    });
+
+    height += '';
+
+    $('#massage-scoll-block').animate({scrollTop: height});
+</script>
 
 </body>
 </html>
