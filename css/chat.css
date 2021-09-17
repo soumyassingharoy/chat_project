@@ -614,5 +614,55 @@ img{
     color: hsl(205, 96%, 43%);
     text-align: center;
     font-weight: 700;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
+
+.icon-lists{
+	width: 100%;
+	padding: 8px 0;
+	margin: 0;
+	border: none;
+	outline: none;
+	text-decoration: none;
+	list-style: none;
+}
+.icon-lists ul{
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	border: none;
+	outline: none;
+	text-decoration: none;
+	list-style: none;
+}
+
+.icon-lists ul li{
+	width: 100%;
+	padding: 4px 0;
+	margin: 0;
+	border: none;
+	outline: none;
+	text-decoration: none;
+	list-style: none;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+	border-bottom: 1px solid #ccc;
+	text-decoration: none;
+	font-size: 16px;
+	line-height: normal;
+}
+
+.icon-lists ul li img{
+	max-height: 42px;
+	padding: 0;
+	margin: 4px;
+	border: none;
+	outline: none;
+}
+
+
 /*/////chatArea-end/////*/
