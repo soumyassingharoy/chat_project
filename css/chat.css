@@ -276,16 +276,21 @@ img{
     height: calc(100vh - 120px);
 }
 .conversation-wrap {
+	width: 100%;
     flex: 1 1;
-    padding: 2rem 1.2rem 0;
+    padding: 0;
+    margin: 0;
     height: fit-content;
+    border: none;
+    outline: none;
+    text-decoration: none;
 }
 .conversation-wrap .full-height-box .chatArea{
 	width: 100%;
     height: 100%;
 }
 
-.messages {
+.conversation-wrap .messages {
     height: 100%;
     margin: 0;
     padding: 4px 8px 4px 8px;
@@ -294,39 +299,63 @@ img{
     border-top-left-radius: 1.3em;
     border-top-right-radius: 1.3em;
 }
-.message {
-    font-size: 14.4pt;
+.conversation-wrap .message {
+    font-size: 16px;
     padding-left: 0;
     padding-right: 0;
     width: 100%;
     display: inline-block;
     clear: both;
 }
-.message-body{
-	color: #333;
-    background-color: #f1f1f1;
-    border-top-right-radius: 1.3em;
-    border-bottom-left-radius: 1.3em;
-    border-bottom-right-radius: 1.3em;
+.conversation-wrap .message-body{
+	display: inline-block;
+    background-color: var(--message-bot-bg-color);
     line-height: 1.2;
-    font-size: 11.2pt;
-    font-family: "Helvetica Neue","Segoe UI",Helvetica,Arial,sans-serif;
+    font-size: var(--message-font-size);
+    font-family: var(--font-family);
+    color: var(--message-bot-text-color);
     box-shadow: 0 0.4px 0.2px rgb(0 0 0 / 13%);
     word-break: break-word;
     padding: 12px 12px;
     margin: 8px;
     max-width: 75%;
 }
-.message-body *{
-	max-width: 100%;
+.conversation-wrap .message.bot .message-body{
+	border-top-right-radius: 1.3em;
+    border-bottom-left-radius: 1.3em;
+    border-bottom-right-radius: 1.3em;
 }
 
-
-.message.user .message-body{
+.conversation-wrap .message.user .message-body{
 	float: right !important;
 	float: right !important;
-    background-color: rgb(255, 0, 118);
-    color: #fff;
+    background-color: var(--message-user-bg-color);
+    color: var(--message-user-text-color);
+    border-bottom-left-radius: 1.3em;
+    border-top-left-radius: 1.3em;
+    border-bottom-right-radius: 1.3em;
+}
+.conversation-wrap .chat-timestamp{
+	width: 100%;
+	padding: 8px 0 0 0;
+	margin: 0;
+	border: none;
+	outline: none;
+	font-size: 11px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.conversation-wrap .chat-timestamp .date-time{
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	border: none;
+	outline: none;
+	text-decoration: none;
+	font-size: 11px;
+	font-weight: 700;
+	letter-spacing: 0.5px;
 }
 
 /*/////chatArea-end/////*/
