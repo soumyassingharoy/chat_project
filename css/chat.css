@@ -584,10 +584,14 @@ img{
     -o-transform-origin: left bottom;
     transform-origin: left bottom;
 
-    display: block;
-    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
     clear: both;
-    padding-left: 35px;
+    padding: 5px 30px 15px 30px;
+    background: rgba(255, 255, 255, 0.5);
 }
 .quick-reply .quick-reply-item{
 	display: inline-block;
@@ -600,23 +604,28 @@ img{
 .quick-reply a{
 	white-space: normal;
     border-radius: 0 0;
-    background-color: #fff;
-    color: #3498db;
-    border: 1px solid #3498db;
+    background-color: var(--quick-reply-color2);
+    color: var(--quick-reply-color1);
+    border: var(--quick-border);
     font-size: inherit;
     display: inline-block;
-    margin: 10px 0 5px 0;
+    margin: 8px;
     border-radius: 20px;
     padding: 8px 16px;
     min-width: 80px;
     margin-right: 5px;
-    border: 1px solid hsl(205, 96%, 43%);
-    color: hsl(205, 96%, 43%);
     text-align: center;
     font-weight: 700;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
--webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
+	transition: 0.3s;
+}
+
+.quick-reply a:hover{
+	text-decoration: none;
+	background-color: var(--quick-reply-color1);
+    color: var(--quick-reply-color2);
 }
 
 .icon-lists{
