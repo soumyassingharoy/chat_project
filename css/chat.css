@@ -369,6 +369,7 @@ img{
 	font-size: 11px;
 	font-weight: 700;
 	letter-spacing: 0.5px;
+	opacity: 0.7;
 }
 
 .conversation-wrap .message-body .text{
@@ -638,7 +639,7 @@ img{
 	transition: 0.3s;
 }
 
-.quick-reply a:hover{
+.conversation-wrap  .quick-reply a:hover{
 	text-decoration: none;
 	background-color: var(--quick-reply-color1);
     color: var(--quick-reply-color2);
