@@ -376,7 +376,7 @@ img{
     background-color: #ffffff !important;
     border-radius: 50% !important;
     position: absolute;
-    top: 50%;
+    top: 30%;
     margin-top: -16px !important;
     z-index: 999;
     cursor: pointer;
@@ -387,11 +387,11 @@ img{
 
 .owl-theme .owl-nav button.owl-prev{
 	left: 0;
-	margin-left: -16px;
+	margin-left: -25px;
 }
 .owl-theme .owl-nav button.owl-next{
 	right: 0;
-	margin-right: -16px;
+	margin-right: -25px;
 }
 
 .message-body .item-title-wrap{
