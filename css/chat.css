@@ -65,8 +65,15 @@ img{
      border-radius: 5px;
     box-shadow: 0 20px 80px rgb(0 0 0 / 60%);
     animation: fadein 1s;
-    background: var(--chat-bg-image);
-	background-size: cover;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+	background-image: var(--chat-bg-image);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 @media (min-width: 581px){
@@ -147,6 +154,8 @@ img{
     display: inline-block;
     clear: both;
 }
+
+
 .chat-area .message-body{
 	display: inline-block;
     background-color: var(--message-bot-bg-color);
@@ -176,6 +185,21 @@ img{
     border-top-left-radius: 1.3em;
     border-bottom-right-radius: 1.3em;
 }
+.chat-area .message-body a{
+	padding: 0;
+	margin: 0;
+}
+.chat-area .message-body.image-box{
+	padding: 0 !important;
+	background-color: transparent;
+}
+
+.chat-area .message-body.image-box img {
+    border-radius: 1.3em;
+    border-top-left-radius: 3px;
+}
+
+
 .chat-area .chat-timestamp{
 	width: 100%;
 	padding: 4px 0 0 0;
@@ -406,9 +430,14 @@ img{
 	outline: none;
 	text-decoration: none;
 	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
 }
 
 .message-body .options-list li a{
+	width: 100%;
 	display: inline-block;
 	padding: 4px 16px;
 	margin: 2px 0;
@@ -417,6 +446,7 @@ img{
 	color: var(--message-user-text-color);
 	font-size: 15px;
 	border-radius: 8px;
+	text-align: center;
 }
 
 
