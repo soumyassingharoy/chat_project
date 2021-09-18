@@ -11,12 +11,6 @@ $(document).ready(function(){
      	responsive:{
      		0:{
      			items:1
-     		},
-     		480:{
-     			items:1
-     		},
-     		1000:{
-     			items:2
      		}
      	} 
   });
