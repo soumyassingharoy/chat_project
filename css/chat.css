@@ -167,7 +167,6 @@ body > ul {
     outline: none;
     overflow-y: auto;
     height: calc(100vh - 60px);
-    margin-bottom: 60px;
 }
 
 
@@ -528,21 +527,21 @@ body > ul {
 	text-decoration: none;
 	list-style: none;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 	flex-wrap: wrap;
 }
 
 .message-body .options-list li a{
-	width: 100%;
+	width: auto;
 	display: inline-block;
 	padding: 4px 16px;
-	margin: 2px 0;
+	margin: 2px;
 	border: none;
 	background-color: var(--highlight-colour);
 	color: var(--message-user-text-color);
 	font-size: 15px;
-	border-radius: 8px;
+	border-radius: 16px;
 	text-align: center;
 }
 
@@ -810,6 +809,13 @@ body > ul {
     margin: 0;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
+    height: auto;
+    
+}
+@media (min-width: 581px){
+	.quick-reply{
+		padding-bottom: 50px;
+	}
 }
 .quick-reply .quick-reply-list{
 	list-style: none;
