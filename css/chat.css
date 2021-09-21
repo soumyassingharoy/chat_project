@@ -210,14 +210,6 @@ body > ul {
     margin: 3.2px;
     max-width: 75%;
 
-    opacity: 1;
-  -webkit-animation-name: mbsc-anim-p-in;
-  -webkit-animation-duration: 0.3s;
-  -webkit-transform: scale(1);
-  animation-name: mbsc-anim-p-in;
-  animation-duration: 0.1s;
-  transform: scale(1);
-
 }
 
 @keyframes mbsc-anim-p-in {
@@ -330,6 +322,13 @@ body > ul {
     line-height: var(--message-text-line-height);
     font-family: var(--font-family);
     color: inherit;
+
+   opacity: 1;
+  -webkit-animation-name: mbsc-anim-p-in;
+  -webkit-animation-duration: 0.3s;
+  -webkit-transform: scale(1);
+  animation-name: mbsc-anim-p-in;
+  animation-duration: 0.1s;
 }
 .chat-area .message-body .text a{
 	display: inline-block;
@@ -428,6 +427,7 @@ body > ul {
 	border: none;
 	outline: none;
 	text-decoration: none;
+	position: relative;
 }
 .message-body .slider-block .project-box{
 	width: 100%;
@@ -813,7 +813,7 @@ body > ul {
 	list-style: none;
     word-wrap: break-word;
     text-align: center;
-    padding: 20px 8px 0px;
+    padding: 8px;
     width: 90%;
     margin: 0 auto;
 }
@@ -855,6 +855,6 @@ body > ul {
     border-bottom-left-radius: 1.3em;
     border-top-left-radius: 1.3em;
     border-bottom-right-radius: 1.3em;
-    padding: 8px 12px;
-    font-weight: 400;
+    padding: 10px 12px;
+    font-weight: 600;
 }
