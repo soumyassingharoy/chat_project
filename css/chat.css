@@ -108,10 +108,11 @@ body > ul {
     top: 0;
     left: 0;
 
-	background-image: var(--chat-bg-image);
+    background-image: var(--chat-bg-image);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+
 }
 
 @media (min-width: 581px){
@@ -156,24 +157,28 @@ body > ul {
 
 
 .chat-content-wrapper .conversation-container{
+	width: 100%;
 	display: flex;
     flex-direction: column;
     flex: 1 1;
-    width: 100%;
-    height: 100%;
     padding: 0;
     margin: 0;
-    padding-bottom: 50px;
+    border: none;
+    outline: none;
+    overflow-y: auto;
+    height: calc(100vh - 60px);
+    margin-bottom: 60px;
 }
 
 
 .chat-area {
-	height: 100%;
+	display: inline-block;
+	width: 100%;
     margin: 0;
-    overflow-y: scroll;
     padding: 4px 4px 4px 8px;
     border-top-left-radius: 1.3em;
     border-top-right-radius: 1.3em;
+    height: auto;
 }
 
 .chat-area .messages {
@@ -798,14 +803,11 @@ body > ul {
 
 
 .quick-reply{
-	overflow: auto;
+	width: 100%;
     font-size: 16px;
     position: static;
-    bottom: 0;
-    height: auto;
-    left: 0;
-    padding-left: 0;
-    width: 100%;
+    padding: 0;
+    margin: 0;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
 }
