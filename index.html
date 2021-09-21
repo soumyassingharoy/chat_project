@@ -50,7 +50,7 @@
         <div class="chat-main-content">
 
             <!---conversation--->
-            <div class="conversation-container" id="massage-scoll-block">
+            <div class="conversation-container" id="massage-scoll-block" style="padding-bottom: 180px">
             	<!---chatArea--->
                 <div class="chat-area">
                     <ul class="messages">
@@ -59,6 +59,14 @@
                                 <div class="text">
                                     <span class="text-span">Welcome to Renewal Properties</span>
                                      <a href="images/images.png" class="venobox" title="Image Titel">
+                                        <div class="image-loader">
+                                            <div class="image-loader-animation">
+                                                <span class="dot"></span>
+                                                <span class="dot"></span>
+                                                <span class="dot"></span>
+                                            </div>
+                                        </div>
+
                                         <img src="images/images.png" alt="image">
                                     </a>
                                 </div>
@@ -67,6 +75,28 @@
                         <li class="message user">
                             <div class="message-body">
                                 <div class="text">
+                                    <div class="text-loader">
+                                        <div class="text-loader-animation">
+                                            <span class="dot"></span>
+                                            <span class="dot"></span>
+                                            <span class="dot"></span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="message user">
+                            <div class="message-body">
+                                <div class="text">
+                                    <div class="text-loader" style="display: none;">
+                                            <div class="text-loader-animation">
+                                                <span class="dot"></span>
+                                                <span class="dot"></span>
+                                                <span class="dot"></span>
+                                            </div>
+                                        </div>
                                     <span class="text-span">Our projects</span>
                                 </div>
                             </div>
@@ -82,6 +112,29 @@
                         <li class="message bot">
                             <div class="message-body">
                                 <div class="text">
+                                    <div class="text-loader">
+                                        <div class="text-loader-animation">
+                                            <span class="dot"></span>
+                                            <span class="dot"></span>
+                                            <span class="dot"></span>
+                                        </div>
+                                    </div>
+                                    <span class="text-span" style="display: none;"></span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="message bot">
+                            <div class="message-body">
+                                <div class="text">
+                                    <div class="text-loader">
+                                        <div class="text-loader-animation">
+                                            <span class="dot"></span>
+                                            <span class="dot"></span>
+                                            <span class="dot"></span>
+                                        </div>
+                                    </div>
+
                                     <span class="text-span">Which projects you are looking for ?</span>
                                 </div>
                             </div>
@@ -98,6 +151,15 @@
                         <li class="message bot">
                             <div class="message-body image-box">
                                <a href="images/realested-1.jpg" class="venobox" title="Image Titel">
+
+                                <div class="image-loader">
+                                    <div class="image-loader-animation">
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                    </div>
+                                </div>
+
                                     <img src="images/realested-1.jpg" alt="image">
                                 </a>
                             </div>
@@ -315,16 +377,25 @@
 
                 <!---quick-reply--->
                 <div class="quick-reply">
-                    <div class="quick-reply-item">
-                        <a href="#">
-                            <span>Show More Gallery</span>
-                        </a>
-                    </div>
-                    <div class="quick-reply-item">
-                        <a href="#">
-                            <span> Back </span>
-                        </a>
-                    </div>
+                    <ul class="quick-reply-list">
+                        <li class="quick-reply-item">
+                            <div class="quick-massage-body">
+                                <h4 class="massage_button">📅 &nbsp;When is the wedding?</h4>
+                            </div>
+                        </li>
+                        <li class="quick-reply-item">
+                            <div class="quick-massage-body">
+                                <h4 class="massage_button">Want to see your pics :)</h4>
+                            </div>
+                        </li>
+                        <li class="quick-reply-item" style="display: none;">
+                            <div class="quick-massage-body">
+                                <h4 class="massage_button">Location</h4>
+                                <h4 class="massage_button">Number</h4>
+                                <h4 class="massage_button">Email</h4>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
                 <!---quick-reply---end--->
             	
