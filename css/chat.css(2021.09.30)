@@ -71,8 +71,6 @@ body > ul {
   position: relative;
   height: 100%;
 }
-
-
 #loading_gif {
   position: fixed;
   top: 50%;
@@ -192,8 +190,6 @@ body > ul {
     outline: none;
     text-decoration: none;
 }
-
-
 .chat-area .message {
     font-size: 16px;
     padding-left: 0;
@@ -352,11 +348,9 @@ body > ul {
 	border: none;
 	outline: none;
 	font-size: var(--message-font-size);
-  line-height: var(--message-text-line-height);
-  font-family: var(--font-family);
-  font-weight: var(--message-text-font-weight);
-  letter-spacing: var(--message-text-letter-spacing);
-  color: inherit;
+    line-height: var(--message-text-line-height);
+    font-family: var(--font-family);
+    color: inherit;
 }
 
 .chat-area .message-body img{
@@ -831,7 +825,7 @@ body > ul {
     width: 90%;
     margin: 0 auto;
 }
-.quick-reply-item{
+.quick-reply .quick-reply-list .quick-reply-item{
 	width: 100%;
 	display: inline-block;
 	padding: 0;
@@ -840,7 +834,7 @@ body > ul {
 	outline: none;
 	text-decoration: none;
 }
-.quick-reply-item .quick-massage-body{
+.quick-reply .quick-reply-list .quick-reply-item .quick-massage-body{
 	width: 100%;
 	display: flex;
 	padding: 0;
@@ -850,28 +844,25 @@ body > ul {
 	text-decoration: none;
 	justify-content: center;
 	align-items: center;
-  flex-wrap: wrap;
 }
-.quick-reply-item  .massage_button{
+.quick-reply .quick-reply-list .quick-reply-item  .massage_button{
 	position: relative;
-	width: 90%;
-  display: inline-block;
-  margin-bottom: -1px;
-  background-color: #fff;
-  border: none;
-  cursor: pointer;
-  border-radius: 5.6px;
-  box-shadow: 1px 1px 4px grey;
-  border-width: 0;
-  background-color: var(--message-user-bg-color);
-  color: var(--message-user-text-color);
-  margin: 4px;
-  border-top-right-radius: 1.3em;
-  border-bottom-left-radius: 1.3em;
-  border-top-left-radius: 1.3em;
-  border-bottom-right-radius: 1.3em;
-  padding: 10px 25px;
-  font-weight: 600;
-  text-align: center;
+	width: 100%;
+    display: block;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5.6px;
+    box-shadow: 1px 1px 4px grey;
+    border-width: 0;
+    background-color: var(--message-user-bg-color);
+    color: var(--message-user-text-color);
+    margin: 4px;
+    border-top-right-radius: 1.3em;
+    border-bottom-left-radius: 1.3em;
+    border-top-left-radius: 1.3em;
+    border-bottom-right-radius: 1.3em;
+    padding: 10px 12px;
+    font-weight: 600;
 }
-

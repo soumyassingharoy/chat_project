@@ -14,7 +14,7 @@
 		:root{
 			--body-color: #434a54;
 			--chat-bg-image: url(../images/body-bg.jpg);
-			--font-family: 'Roboto', sans-serif;
+			--font-family: 'HelveticaNeueMedium';
 
             --text-color1: #4A4A4A;
             --highlight-colour: #ff0076;
@@ -29,8 +29,8 @@
             --message-bot-text-color: #333;
             --message-user-bg-color: #ff0076;
             --message-user-text-color: #ffffff !important;
-            --message-font-size: 15px;
-            --message-text-line-height: 22px;
+            --message-font-size: 11.2pt;
+            --message-text-line-height: 1.2;
 
             --quick-reply-color1: #ff0076;
             --quick-reply-color2: #ffffff;
@@ -43,6 +43,15 @@
 	<link rel="stylesheet" href="css/chat.css">
 </head>
 <body>
+
+    <audio class="my_audio"  controls loop autoplay height="" width="">
+      <source src="bg-sound.mp3" type="audio/ogg">
+      <source src="bg-sound.ogg" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+
+
 
 	<div class="chat-content-wrapper">
 
@@ -417,6 +426,10 @@
 
 	</div>
 
+    
+
+
+
 
 <link rel="stylesheet" href="css/font-awesome.min.css">
 
@@ -439,6 +452,11 @@
     height += '';
     $('#massage-scoll-block').animate({scrollTop: height});
 </script>
+
+<script>
+$(".my_audio").trigger('load');
+</script>
+
 
 </body>
 </html>
