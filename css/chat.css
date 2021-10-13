@@ -277,6 +277,14 @@ body > ul {
     border-top-left-radius: 1.3em;
     border-bottom-right-radius: 1.3em;
 }
+
+.chat-area .message.bot .message-body.video-block{
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    overflow: hidden;
+}
+
 .chat-area .message-body a{
 	padding: 0;
 	margin: 0;
